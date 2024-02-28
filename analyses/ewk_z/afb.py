@@ -110,6 +110,6 @@ def build_graph(df, dataset):
 if __name__ == "__main__":
 
     datadict = functions.get_datadicts() # get default datasets
-    datasets_to_run = ["wzp6_ee_mumu_ecm91p2", "kkmc_ee_mumu_ecm91p2"]
+    datasets_to_run = ["wzp6_ee_mumu_ecm91p2", "kkmcee_ee_mumu_ecm91p2"]
 
     functions.build_and_run(datadict, datasets_to_run, build_graph, f"afb.root", args, norm=True, lumi=150000000)
