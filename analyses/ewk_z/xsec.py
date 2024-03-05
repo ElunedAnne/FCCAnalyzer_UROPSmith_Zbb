@@ -249,14 +249,14 @@ if __name__ == "__main__":
     datadict = functions.get_datadicts() # get default datasets
 
     if args.flavor == "mumu": 
-        datasets_to_run = ["wzp6_ee_mumu_ecm91p2", "wzp6_ee_tautau_ecm91p2", "wzp6_ee_qq_ecm91p2"]
+        datasets_to_run = ["wzp6_ee_mumu_ecm91p2", "wzp6_ee_tautau_ecm91p2", "wz3p6_ee_qq_ecm91p2"]
         result = functions.build_and_run(datadict, datasets_to_run,  build_graph_ll, f"output_z_xsec_mumu.root", args, norm=True, lumi=150000000)
 
     if args.flavor == "ee":
-        datasets_to_run = ["wzp6_ee_ee_Mee_5_150_ecm91p2", "wzp6_ee_tautau_ecm91p2", "wzp6_ee_qq_ecm91p2"]
+        datasets_to_run = ["wzp6_ee_ee_Mee_5_150_ecm91p2", "wzp6_ee_tautau_ecm91p2", "wz3p6_ee_qq_ecm91p2"]
         result = functions.build_and_run(datadict, datasets_to_run, build_graph_ll, f"output_z_xsec_ee.root", args, norm=True, lumi=150000000)
  
     if args.flavor == "qq":
-        datasets_to_run = ["wzp6_ee_qq_ecm91p2"]
+        datasets_to_run = ["wz3p6_ee_qq_ecm91p2"]
         result = functions.build_and_run(datadict, datasets_to_run, build_graph_qq, f"output_z_xsec_qq.root", args, norm=True, lumi=150000000)
 
